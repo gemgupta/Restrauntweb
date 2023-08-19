@@ -20,11 +20,11 @@
 }
 .item:hover {
   cursor: pointer;
-  font-size: 20px;
+  text-decoration: underline;
 }
 .cart-nav:hover {
   cursor: pointer;
-  font-size: 18px;
+  background-color: rgb(58, 13, 2);
  
 }
 .cart-nav {
@@ -35,7 +35,7 @@
   padding: 5px;
   border-radius: 10px;
   border: 2px solid black;
-  background-color: rgb(91, 27, 11);
+  background-color: rgb(84, 52, 44);
 }
 .cart-nav img{
     width :20px;
