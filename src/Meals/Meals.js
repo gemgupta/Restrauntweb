@@ -1,5 +1,6 @@
 import React from "react";
 import "./Meals.css";
+import MealsForm from "./MealsForm";
 const Meals1 = [
   {
     id: "m1",
@@ -26,17 +27,17 @@ const Meals1 = [
     price: 18.99,
   },
 ];
-function Meals() {
+function Meals(props) {
   return (
     <section className="meals meallist">
       <ul>
         {Meals1.map((item) => (
-          <div className="meals-1">
-            <li key={item.id}>
-              <h3>{item.name}</h3>
-            </li>
-            <li>{item.description}</li>
-            <li>INR {item.price}</li>
+          <div key={item.id} className="meals-1">
+             <MealsForm/>
+            <h3>{item.name}</h3>
+            <div className="discription">{item.description}</div>
+            <div className="price">INR {item.price}</div>
+           
           </div>
         ))}
       </ul>

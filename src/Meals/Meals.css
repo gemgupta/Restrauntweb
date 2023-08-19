@@ -7,8 +7,7 @@
 
 .meals ul {
   list-style: none;
-  margin: 0;
-  padding: 0;
+ 
 }
 
 @keyframes meals-appear {
@@ -25,7 +24,7 @@
 .meallist {
   padding: 1rem;
   color: white;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 1);
   border-radius: 14px;
   background-color: rgb(91, 27, 11);
 }
@@ -34,4 +33,13 @@
 
   margin: 1rem;
   padding-bottom: 1rem;
+}
+.discription {
+  font-style: italic;
+}
+.price {
+  margin-top: 0.25rem;
+  font-weight: bold;
+
+  font-size: 1.25rem;
 }
