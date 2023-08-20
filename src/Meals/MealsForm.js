@@ -3,9 +3,12 @@ import "./MealsForm.css";
 function MealsForm() {
   return (
     <div className="meal-form">
-      <label htmlFor="quant"> Amount</label>
-      <input type="number" name="quant" id="quant" value={1}/>
-      <button type="submit">+Add</button>
+    <form >
+     <label htmlFor="quant">Amount</label>
+      <input type="number" name="quant" min={1} max={5} defaultValue={1} step={1}/>
+      
+    <button className="formbutton" type="submit">+Add</button>
+    </form>
     </div>
   );
 }

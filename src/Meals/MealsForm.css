@@ -3,6 +3,8 @@ float: right;
 }
 .meal-form label {
 padding: 0.4rem;
+margin: 0rem 5rem;
+
 
 }
 .meal-form input {
@@ -11,15 +13,18 @@ max-width: 2rem;
 height: 1.7rem;
 justify-content: center;
 text-align: center;
+margin: 0rem -5rem;
+
 }
-.meal-form button {
-border-radius: 0.8rem;
-width: 4rem;
-padding: 0.3rem;
+.formbutton {
+    float: right;
+border-radius: 1.4rem;
+width: 6rem;
+padding: 0.5rem;
 font-weight: bold;
-margin: 1rem;
+margin: 2.5rem 0rem;
 }
-.meal-form button:hover {
+.formbutton:hover {
 background-color: rgb(85, 21, 5);
 color: white;
 }
