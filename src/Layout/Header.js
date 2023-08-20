@@ -2,7 +2,7 @@ import React from "react";
 import "./Header.css";
 import Cartimg from "./shopping-cart.png";
 import Foodimg from "./tamanna-rumee-cvq_8XHp2rM-unsplash.jpg";
-function Header() {
+function Header(props) {
   return (
     <>
       <div className="container-nav">
@@ -14,7 +14,7 @@ function Header() {
           <span className="item">About Us</span>
           <span className="item">Contact Us</span>
         </nav>
-        <button className="cart-nav">
+        <button onClick={props.onOpen} className="cart-nav">
           <img src={Cartimg} alt="Cartimg" />
           <h3> Your Cart</h3>
           <div className="num">0</div>
