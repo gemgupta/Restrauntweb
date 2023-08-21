@@ -34,7 +34,7 @@ function Meals() {
       <ul>
         {Meals1.map((item) => (
           <div key={item.id} className="meals-1">
-            <MealsForm />
+            <MealsForm item={item} />
             <h3>{item.name}</h3>
             <div className="discription">{item.description}</div>
             <div className="price">INR {item.price}</div>

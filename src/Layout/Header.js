@@ -1,8 +1,15 @@
 import React from "react";
+import { useContext } from "react";
 import "./Header.css";
 import Cartimg from "./shopping-cart.png";
 import Foodimg from "./tamanna-rumee-cvq_8XHp2rM-unsplash.jpg";
+import CartContext from "../Components/Store/CartContext";
 function Header(props) {
+  const Cartctx = useContext(CartContext);
+  let quantity = 0;
+  Cartctx.item.forEach((item) => {
+    quantity =   quantity + Number(item.quantity);
+  });
   return (
     <>
       <div className="container-nav">
@@ -17,7 +24,8 @@ function Header(props) {
         <button onClick={props.onOpen} className="cart-nav">
           <img src={Cartimg} alt="Cartimg" />
           <h3> Your Cart</h3>
-          <div className="num">0</div>
+
+          <div className="num">{quantity}</div>
         </button>
       </div>
       <div className="body-img">
