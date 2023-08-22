@@ -6,8 +6,8 @@ function MealsForm(props) {
   const Cartctx = useContext(CartContext);
   const AddItemHandler = (event) => {
     event.preventDefault();
-    const quantity= document.getElementById(props.item.id).value
-    Cartctx.addItem({...props.item,quantity: quantity});
+    const quantity = document.getElementById(props.item.id).value;
+    Cartctx.addItem({ ...props.item, quantity: quantity });
   };
   return (
     <div className="meal-form">
